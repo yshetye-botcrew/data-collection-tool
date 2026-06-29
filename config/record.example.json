@@ -1,0 +1,15 @@
+{
+  "domain_id": 0,
+  "output": "recording.mcap",
+  "compression": "zstd",
+
+  "//topics": "type may be the ROS-style schema name or the DDS name; must be in SupportedTypes",
+  "topics": [
+    { "topic": "/lio/odometry",     "type": "nav_msgs/Odometry" },
+    { "topic": "/lio/path",         "type": "nav_msgs/Path" },
+    { "topic": "/tf",               "type": "tf2_msgs/TFMessage" },
+    { "topic": "/tf_static",        "type": "tf2_msgs/TFMessage" },
+    { "topic": "/cloud_registered", "type": "sensor_msgs/PointCloud2" },
+    { "topic": "/terrain/gridmap",  "type": "gravion_msgs::msg::dds_::GridMapStamped_" }
+  ]
+}
