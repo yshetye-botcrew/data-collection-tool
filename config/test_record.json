@@ -1,0 +1,9 @@
+{
+  "domain_id": 88,
+  "output": "loopback.mcap",
+  "compression": "zstd",
+  "topics": [
+    { "topic": "/test/value", "type": "std_msgs/Float64" },
+    { "topic": "/test/cloud", "type": "sensor_msgs/PointCloud2" }
+  ]
+}
